@@ -8,7 +8,7 @@ Final-Year Student in Automatic Control & Applied Computer Science (AIA), Techni
 ## Overview & Focus
 
 - **Current Role:** Software & Automation Engineer Intern at DeviDevs Technologies. Designing autonomous Second Brain architectures (Three-Spaces model), Human-in-the-Loop agent bridges, OS-level atomic file concurrency (`fcntl.flock`), and automated Python ETL pipelines integrating Google Cloud APIs.
-- **Academic Practice Project:** Architected a 2D tactical combat engine in Unity 2D / C# featuring autonomous Finite State Machine (FSM) Enemy AI, orbit-based geometric cover navigation from `Collider2D.bounds`, decoupled subsystems, and Object Pooling to prevent GC memory spikes (87+ tracked engineering hours in Jira under Git Flow).
+- **Corporate Team Collaboration (Academic Practice):** Collaborated in a cross-functional engineering team building a 2D tactical combat engine in Unity 2D / C#. Managed all deliverables via **Jira Agile sprints** (~87.4 tracked engineering hours across 10+ epics) under strict enterprise **Git Flow** practices (feature branches, pull requests, peer code reviews, rebasing, and merge conflict resolution).
 - **Academic Background:** Bachelor of Science in Automatic Control and Applied Computer Science (AIA), UTCB (2023 – 2027).
 
 ---
@@ -16,7 +16,7 @@ Final-Year Student in Automatic Control & Applied Computer Science (AIA), Techni
 ## Technical Stack
 
 - **Languages:** Python, C#, SQL, Bash/Zsh, C/C++
-- **Systems & DevOps:** macOS / Linux, launchd Daemons, Git Flow, Jira Agile, Docker, REST APIs
+- **Systems & DevOps:** macOS / Linux, launchd Daemons, Git Flow (PRs, Rebasing, Branching), Jira Agile (Sprints, Epics), Docker, REST APIs
 - **Frameworks & Engines:** Unity (2D/3D, Physics2D, uGUI), .NET, Playwright CDP
 - **Cloud & Tooling:** Google Cloud APIs (Drive, Gmail, Sheets), Obsidian Knowledge Graphs, AI Agent Harnesses
 
@@ -25,7 +25,7 @@ Final-Year Student in Automatic Control & Applied Computer Science (AIA), Techni
 ## Projects
 
 - **[Autonomous AI Agent Bridge & Second Brain](https://github.com/cRs011)** — Human-in-the-Loop execution bridge with atomic `flock` file locking, FIFO task queues, and watchOS/iOS push alerts over a Three-Spaces Knowledge Vault.
-- **[2D Tactical Combat & AI Game](https://github.com/cRs011/proiectul-Unity-2D)** — 2D tactical combat engine in Unity/C# with 4-state FSM Enemy AI, Raycast2D Line-of-Sight targeting, dynamic cover avoidance, and local 2-player co-op.
+- **[2D Tactical Combat & AI Game](https://github.com/cRs011/proiectul-Unity-2D)** — Team-developed 2D tactical combat game in Unity/C# with 4-state FSM Enemy AI, Raycast2D Line-of-Sight targeting, dynamic geometric cover avoidance from `Collider2D.bounds`, and local 2-player co-op (87.4h tracked in Jira under Git Flow).
 
 ---
 
