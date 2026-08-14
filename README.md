@@ -23,6 +23,7 @@ Final-Year Student in Automatic Control & Applied Computer Science (AIA), Techni
 
 ### CV & Contact
 
+- Live Portfolio: [crs011.github.io](https://crs011.github.io)
 - Markdown CV: [`cv.md`](cv.md)
 - Download PDF CV: [`CV_Cristian_Lacatus_Software_Engineer.pdf`](CV_Cristian_Lacatus_Software_Engineer.pdf)
 - LinkedIn: [linkedin.com/in/cristi-lacatus-823696294](https://www.linkedin.com/in/cristi-lacatus-823696294/)
