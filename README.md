@@ -1,36 +1,37 @@
-# Salut, sunt Cristi! 👋
+# Cristian Lăcătuș
 
-**Software & Automation Engineer Intern @ [DeviDevs Technologies](https://devidevs.com)**  
-Final-Year Automatic Control & Applied Computer Science (AIA) student @ **Universitatea Tehnică de Construcții București (UTCB)**.
-
----
-
-### 🚀 Despre mine & Ce construiesc
-- 🛠️ **Rol Curent:** Software & Automation Engineer Intern la **DeviDevs**, unde dezvolt arhitecturi de Second Brain (Three-Spaces Vault), sisteme de agenți AI (Human-in-the-Loop bridges cu Telegram & Apple Watch push alerts), mecanisme atomice de concurență (`fcntl.flock`) și pipeline-uri de date în Python (Google Cloud APIs).
-- 🎮 **Practică Academică:** Am proiectat și construit un joc 2D de luptă tactică în **Unity 2D / C#** (Enemy AI bazat pe Finite State Machine, dynamic cover geometric din `Collider2D.bounds`, Object Pooling & GC spikes optimization) cu 87+ ore logate în Jira sub Git Flow.
-- 🎓 **Educație:** Licență în Ingineria Sistemelor Automate și Informatică Aplicată (AIA UTCB, 2023 – 2027).
+Software & Automation Engineer Intern at [DeviDevs Technologies](https://devidevs.com)  
+Final-Year Student in Automatic Control & Applied Computer Science (AIA), Technical University of Civil Engineering of Bucharest (UTCB).
 
 ---
 
-### 🧰 Tech Stack & Unelte
+## Overview & Focus
 
-- **Limbaje:** `Python`, `C#`, `SQL`, `Bash / Zsh`, `C/C++`
-- **Sisteme & DevOps:** `macOS / Linux`, `launchd Daemons`, `Git Flow`, `Jira Agile`, `Docker`, `REST APIs`
-- **Frameworks & Engine-uri:** `Unity (2D/3D, Physics2D, uGUI)`, `.NET`, `Playwright CDP`
-- **Cloud & Tooling:** `Google Cloud APIs (Drive, Gmail, Sheets)`, `Obsidian Knowledge Graphs`, `AI Agent Orchestration`
-
----
-
-### 📌 Proiecte Notabile
-
-- **[Autonomous AI Agent Bridge & Second Brain](https://github.com/cRs011)** — Bridge interactiv Human-in-the-Loop cu concurență atomică `flock`, cozi FIFO de task-uri și alerte push pe watchOS/iOS peste un Knowledge Vault Obsidian Three-Spaces.
-- **[2D Tactical Combat & AI Game](https://github.com/cRs011/proiectul-Unity-2D)** — Motor de luptă 2D și AI autonom în Unity/C# cu FSM, Line-of-Sight Raycasting, navigație orbitală de acoperire și local 2-player co-op (87.4h Jira).
+- **Current Role:** Software & Automation Engineer Intern at DeviDevs Technologies. Designing autonomous Second Brain architectures (Three-Spaces model), Human-in-the-Loop agent bridges, OS-level atomic file concurrency (`fcntl.flock`), and automated Python ETL pipelines integrating Google Cloud APIs.
+- **Academic Practice Project:** Architected a 2D tactical combat engine in Unity 2D / C# featuring autonomous Finite State Machine (FSM) Enemy AI, orbit-based geometric cover navigation from `Collider2D.bounds`, decoupled subsystems, and Object Pooling to prevent GC memory spikes (87+ tracked engineering hours in Jira under Git Flow).
+- **Academic Background:** Bachelor of Science in Automatic Control and Applied Computer Science (AIA), UTCB (2023 – 2027).
 
 ---
 
-### 📄 CV & Contact
+## Technical Stack
 
-- 📄 **CV Format Markdown:** [`cv.md`](cv.md)
-- 📥 **Descarcă CV PDF:** [`CV_Cristian_Lacatus_Software_Engineer.pdf`](CV_Cristian_Lacatus_Software_Engineer.pdf)
-- 💼 **LinkedIn:** [linkedin.com/in/cristian-lacatus](https://www.linkedin.com/in/cristi-lacatus-823696294/)
-- ✉️ **Email:** [lacatuscristian8@gmail.com](mailto:lacatuscristian8@gmail.com)
+- **Languages:** Python, C#, SQL, Bash/Zsh, C/C++
+- **Systems & DevOps:** macOS / Linux, launchd Daemons, Git Flow, Jira Agile, Docker, REST APIs
+- **Frameworks & Engines:** Unity (2D/3D, Physics2D, uGUI), .NET, Playwright CDP
+- **Cloud & Tooling:** Google Cloud APIs (Drive, Gmail, Sheets), Obsidian Knowledge Graphs, AI Agent Harnesses
+
+---
+
+## Projects
+
+- **[Autonomous AI Agent Bridge & Second Brain](https://github.com/cRs011)** — Human-in-the-Loop execution bridge with atomic `flock` file locking, FIFO task queues, and watchOS/iOS push alerts over a Three-Spaces Knowledge Vault.
+- **[2D Tactical Combat & AI Game](https://github.com/cRs011/proiectul-Unity-2D)** — 2D tactical combat engine in Unity/C# with 4-state FSM Enemy AI, Raycast2D Line-of-Sight targeting, dynamic cover avoidance, and local 2-player co-op.
+
+---
+
+## CV & Contact
+
+- Markdown CV: [`cv.md`](cv.md)
+- Download PDF CV: [`CV_Cristian_Lacatus_Software_Engineer.pdf`](CV_Cristian_Lacatus_Software_Engineer.pdf)
+- LinkedIn: [linkedin.com/in/cristi-lacatus-823696294](https://www.linkedin.com/in/cristi-lacatus-823696294/)
+- Email: [lacatuscristian8@gmail.com](mailto:lacatuscristian8@gmail.com)
