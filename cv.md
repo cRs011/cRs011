@@ -3,12 +3,8 @@
 București, România · [lacatuscristian8@gmail.com](mailto:lacatuscristian8@gmail.com) · +40 739 645 462  
 GitHub: [github.com/cRs011](https://github.com/cRs011) · LinkedIn: [linkedin.com/in/cristian-lacatus](https://www.linkedin.com/in/cristi-lacatus-823696294/)
 
----
-
 ### Positioning
 **Software & Automation Engineer Intern @ DeviDevs.** Construiesc pipeline-uri de automatizări în Python, arhitecturi de agenți AI (Human-in-the-Loop bridges cu Telegram/Apple Watch), subsisteme de gameplay & FSM Enemy AI în Unity 2D / C#, și integrare de API-uri cloud sub metodologii Agile (Jira, Git Flow).
-
----
 
 ### Experiență & Proiecte Principale
 
@@ -28,14 +24,10 @@ GitHub: [github.com/cRs011](https://github.com/cRs011) · LinkedIn: [linkedin.co
 #### **Operations & Customer Support** · Tucano Coffee *(Iun 2022 – Oct 2022)*
 - Gestionat fluxuri de comenzi de volum mare, reconciliere stocuri și comunicare directă într-un mediu cu ritm alert.
 
----
-
 ### Skills Tehnice
 - **Limbaje:** Python, C#, SQL, Bash/Zsh, C/C++
 - **Sisteme & DevOps:** macOS / Linux, launchd Daemons, Git Flow (PRs, Code Review, Branching), Jira Agile (Sprints, Epics), Docker, REST APIs
 - **Tooling & Cloud:** Google Cloud APIs (Drive, Gmail, Sheets), Playwright CDP, Obsidian Vault, Unity 2D / .NET
-
----
 
 ### Educație
 - **Licență (B.S.):** Ingineria Sistemelor Automate și Informatică Aplicată (AIA) — Universitatea Tehnică de Construcții București (UTCB), *2023 – 2027 (An terminal)*.
