@@ -1,33 +1,61 @@
 # Cristian Lăcătuș
-**Automatică și Informatică Aplicată (AIA), UTCB (Anul IV / Terminal)**  
-București, România · [lacatuscristian8@gmail.com](mailto:lacatuscristian8@gmail.com) · +40 739 645 462  
-GitHub: [github.com/cRs011](https://github.com/cRs011) · LinkedIn: [linkedin.com/in/cristian-lacatus](https://www.linkedin.com/in/cristi-lacatus-823696294/)
 
-### Positioning
-**Software & Automation Engineer Intern @ DeviDevs.** Construiesc pipeline-uri de automatizări în Python, arhitecturi de agenți AI (Human-in-the-Loop bridges cu Telegram/Apple Watch), subsisteme de gameplay & FSM Enemy AI în Unity 2D / C#, și integrare de API-uri cloud sub metodologii Agile (Jira, Git Flow).
+**Software & automation engineer** · Bucharest, Romania
+[lacatuscristian8@gmail.com](mailto:lacatuscristian8@gmail.com) · +40 739 645 462
+[crs011.github.io](https://crs011.github.io) · [github.com/cRs011](https://github.com/cRs011) · [linkedin.com/in/cristi-lacatus](https://www.linkedin.com/in/cristi-lacatus-823696294/)
 
-### Experiență & Proiecte Principale
+PDF: [English](CV_Cristian_Lacatus_Software_Engineer.pdf) · [Romanian](CV_Cristian_Lacatus_RO.pdf). Both are rendered from [`cv/`](cv/) with `bash cv/build.sh`.
 
-#### **Software Engineer Intern — Automation & Integrations** · DeviDevs Technologies *(Iul 2026 – Prezent)*
-- **Second Brain & Knowledge Vault:** Am proiectat și implementat un vault autonom în Obsidian bazat pe modelul cognitiv Three-Spaces (`self/`, `notes/`, `ops/`), cu reguli deterministe de validare a schemelor și lintere pentru integritatea grafului.
-- **Human-in-the-Loop Multi-Agent Bridge:** Am construit un daemon interactiv care leagă execuția agenților autonomi de codare cu alerte push în timp real pe Telegram și Apple Watch, streaming dinamic de stare și coadă de execuție FIFO.
-- **Pipeline-uri ETL & Concurrency:** Am dezvoltat scripturi de automatizare în Python integrate cu Google Cloud APIs (Drive XLSX trackers, Gmail, Sheets) orchestrate de daemoni macOS `launchd` și protejate de mecanisme atomice de file locking (`fcntl.flock`).
-- **Browser Automation:** Am implementat controllere Playwright Chrome CDP pentru navigare și sincronizare automată de formulare și documente rich-text.
+### Summary
 
-#### **2D Tactical Combat & AI Game** · Proiect de Practică Academică în Echipă *(Unity 2D / C#)*
-- **Colaborare în Echipă & Jira Agile:** Am colaborat într-o echipă de inginerie distribuită, livrând peste 10 epice Jira cu ~87.4 ore de dezvoltare efectivă logate conform sprinturilor stabilite.
-- **Enterprise Git Flow:** Am aplicat fluxul standard de corporație cu ramuri dedicate de feature (`feature/*`), Pull Requests, peer code reviews riguroase, rezolvare de conflicte și rebasing.
-- **Enemy AI & Finite State Machine:** Am implementat un sistem autonom de AI cu 4 stări (Patrol ➔ Chase ➔ Shoot ➔ Dynamic Cover/Flee) cu Line-of-Sight (LOS) Raycast2D și tranziții adaptive la scăderea vieții.
-- **Navigație Geometrică de Acoperire:** Am creat un algoritm de cover avoidance bazat pe vectori orbitali calculați din `Collider2D.bounds`, fără waypoint-uri rigide.
-- **Optimizare Memorie & GC:** Am arhitecturat componente decuplate (`Health`, `ProjectileDamage`, `ObjectPooling`) pentru eliminarea spike-urilor de Garbage Collection.
+Final-year Automation & Applied Informatics student, software engineer intern at DeviDevs since July 2026. Most of what I build has no interface: Python jobs that run on a schedule, hold a file lock, retry a slow API and recover without a human. I like the front-end half too, so I am after a junior full-stack role.
 
-#### **Operations & Customer Support** · Tucano Coffee *(Iun 2022 – Oct 2022)*
-- Gestionat fluxuri de comenzi de volum mare, reconciliere stocuri și comunicare directă într-un mediu cu ritm alert.
+### Experience
 
-### Skills Tehnice
-- **Limbaje:** Python, C#, SQL, Bash/Zsh, C/C++
-- **Sisteme & DevOps:** macOS / Linux, launchd Daemons, Git Flow (PRs, Code Review, Branching), Jira Agile (Sprints, Epics), Docker, REST APIs
-- **Tooling & Cloud:** Google Cloud APIs (Drive, Gmail, Sheets), Playwright CDP, Obsidian Vault, Unity 2D / .NET
+#### Software Engineer Intern — Automation & Integrations · DeviDevs Technologies *(Jul 2026 – present)*
 
-### Educație
-- **Licență (B.S.):** Ingineria Sistemelor Automate și Informatică Aplicată (AIA) — Universitatea Tehnică de Construcții București (UTCB), *2023 – 2027 (An terminal)*.
+- **Human-in-the-loop agent bridge.** A Python daemon that lets me supervise a long coding-agent run from my phone or watch: verbose output summarised into one notification line and a question answerable in a single word, with a FIFO execution queue behind it. In daily use.
+- **Single-writer concurrency.** An interactive session and a headless job write to the same Markdown vault, so writes are serialised with kernel file locks (`fcntl.flock`) and explicit signal handlers instead of hoping the two never overlap.
+- **Scheduled automation and integrations.** Python ETL over Google Workspace APIs (Drive, Sheets, Gmail) running unattended under macOS `launchd`, with conditional HTTP caching and SQLite state, plus Playwright controllers driving Chrome over the DevTools Protocol where there is no API.
+- **Guardrails for AI coding agents.** Lifecycle hooks that block an edit made after reading only a fraction of a file, plus a checker that verifies every documented claim against what is actually on disk — currently 537 file references and 29 capabilities, tested by running them.
+
+#### Academic practice — game systems and enemy AI · DeviDevs Technologies / UTCB *(May – Jul 2026)*
+
+- Built the enemy AI and cover system for a 2D tank game in Unity and C#, in a team working on a normal branch, pull request and review workflow — roughly 87 hours logged in Jira across 10+ epics. Continued at the company as an intern afterwards.
+
+#### Operations & customer support · Tucano Coffee *(Jun – Oct 2022)*
+
+- High-volume order flow, stock reconciliation and direct customer contact.
+
+### Selected projects
+
+#### BetterTanks — enemy AI for a 2D tank game · Unity 2D, C#
+
+- A five-state machine — patrol, chase, shoot, defensive, flee — where transitions are driven by health thresholds rather than distance alone: below 50% it looks for cover, below 25% it runs.
+- No hand-placed cover markers: for every destructible wall still standing it derives four candidate positions from `Collider2D.bounds` and scores them, weighting proximity to itself ten times higher than distance from the player. `Physics2D` raycasts handle obstacle avoidance on the way there.
+- The time went into behaviour, not structure — stopping it oscillating between two hiding spots, and handling the wall being destroyed while it is behind it.
+- [Write-up](https://crs011.github.io/projects/bettertanks.html) · [code](https://github.com/cRs011/proiectul-Unity-2D)
+
+#### Answering a coding agent from my watch · Python 3, Unix daemons
+
+- Telegram as transport, chosen for its native watchOS app; the hard part was compressing agent output into something readable on a wrist and a decision answerable in one word. Encryption between the three endpoints is not implemented yet, and the write-up says so.
+- [Write-up](https://crs011.github.io/projects/agent-bridge.html)
+
+#### Portfolio site · HTML, CSS, Python
+
+- Hand-written, no framework. Projects render from a single JSON source through a build script that refuses to publish when a page or a media file it claims does not exist on disk.
+- [crs011.github.io](https://crs011.github.io)
+
+### Skills
+
+- **Code:** Python, C# (.NET), JavaScript / HTML / CSS, Bash / Zsh, SQL, C / C++
+- **Systems:** Unix daemons and `launchd`, POSIX file locking, Git branching / pull requests / review, REST APIs and OAuth, Docker, Jira
+- **Tools:** Unity 2D, Playwright / Chrome DevTools Protocol, Google Cloud APIs, SQLite, Obsidian, AI coding agents
+- **Spoken:** Romanian (native), English (professional working proficiency, B2–C1)
+
+### Education
+
+**BSc, Automation & Applied Informatics (AIA)** — Faculty of Hydrotechnical Engineering and Water Resources Management, Technical University of Civil Engineering of Bucharest (UTCB), 2023 – 2027 (final year).
+
+- Control systems, differential equations, signal analysis, instrumentation, industrial automation, software engineering.
+- Short courses, 2024: Neuroscience & AI (Catholic University of Valencia) · Film Literacy (University of Zadar).

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Cristian Lăcătuș — CV</title>
+<link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+<header class="head">
+  <div>
+    <h1>Cristian Lăcătuș</h1>
+    <p class="role">Inginer software și automatizări</p>
+    <p class="contact">
+      București, România<span class="sep">·</span><a href="mailto:lacatuscristian8@gmail.com">lacatuscristian8@gmail.com</a><span class="sep">·</span>+40 739 645 462<br>
+      <a href="https://crs011.github.io">crs011.github.io</a><span class="sep">·</span><a href="https://github.com/cRs011">github.com/cRs011</a><span class="sep">·</span><a href="https://www.linkedin.com/in/cristi-lacatus-823696294/">linkedin.com/in/cristi-lacatus</a>
+    </p>
+  </div>
+  <figure class="portrait"><img src="portrait.jpg" alt="Cristian Lăcătuș" width="654" height="818"></figure>
+</header>
+
+<section>
+  <h2>Pe scurt</h2>
+  <p class="summary">
+    Student în an terminal la Automatică și Informatică Aplicată, software engineer intern la
+    DeviDevs din iulie 2026. Majoritatea lucrurilor pe care le construiesc nu au interfață: scripturi
+    Python care pornesc singure la program, țin un lock pe fișier, reîncearcă un API lent și își
+    revin fără om. Îmi place și partea de front-end, așa că vreau un rol junior full-stack.
+  </p>
+</section>
+
+<section>
+  <h2>Experiență</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Software Engineer Intern — automatizări și integrări</h3>
+      <span class="when">iul. 2026 – prezent</span>
+    </div>
+    <p class="org">DeviDevs Technologies · București (hibrid)</p>
+    <ul>
+      <li><b>Punte human-in-the-loop pentru agenți.</b> Un daemon Python prin care supraveghez de pe telefon sau de pe ceas o execuție lungă a unui agent de codare: rezultatul stufos ajunge o linie de notificare și o întrebare la care se răspunde cu un cuvânt, cu o coadă FIFO în spate. Îl folosesc zilnic.</li>
+      <li><b>Un singur scriitor la un moment dat.</b> O sesiune interactivă și un proces headless scriu în același vault Markdown, așa că scrierile sunt serializate cu lock-uri de kernel (<code>fcntl.flock</code>) și handlere explicite de semnal, nu cu speranța că nu se suprapun.</li>
+      <li><b>Automatizări programate și integrări.</b> Pipeline-uri ETL în Python peste API-urile Google Workspace (Drive, Sheets, Gmail), rulate nesupravegheat sub <code>launchd</code> pe macOS, cu cache condiționat pe HTTP și stare în SQLite, plus controllere Playwright care conduc Chrome prin DevTools Protocol acolo unde nu există API.</li>
+      <li><b>Bariere pentru agenții de codare AI.</b> Hook-uri care blochează o editare făcută după citirea unei fracțiuni din fișier și un verificator care confruntă fiecare afirmație din documentație cu ce există pe disc — momentan 537 de referințe și 29 de capabilități, testate prin rulare.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Practică academică — sisteme de joc și AI de inamic</h3>
+      <span class="when">mai – iul. 2026</span>
+    </div>
+    <p class="org">DeviDevs Technologies / UTCB · proiect în echipă</p>
+    <ul>
+      <li>Am construit AI-ul de inamic și sistemul de acoperire pentru un joc 2D cu tancuri în Unity și C#, într-o echipă care lucra pe ramuri, pull request-uri și code review — aproximativ 87 de ore înregistrate în Jira, pe peste 10 epice. Am continuat la firmă ca intern după practică.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Operațiuni și relații cu clienții</h3>
+      <span class="when">iun. – oct. 2022</span>
+    </div>
+    <p class="org">Tucano Coffee · București — flux mare de comenzi, reconciliere de stocuri și contact direct cu clientul.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Proiecte selectate</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>BetterTanks — AI de inamic pentru un joc 2D cu tancuri</h3>
+      <span class="when">Unity 2D · C#</span>
+    </div>
+    <ul>
+      <li>O mașină cu cinci stări — patrulare, urmărire, tragere, defensivă, fugă — în care tranzițiile sunt dictate de praguri de viață, nu doar de distanță: sub 50% caută acoperire, sub 25% fuge.</li>
+      <li>Fără puncte de acoperire puse de mână: pentru fiecare zid distructibil rămas în picioare derivă patru poziții candidate din <code>Collider2D.bounds</code> și le punctează, apropierea de el cântărind de zece ori mai mult decât depărtarea de jucător. Timpul s-a dus pe comportament — să nu mai oscileze între două ascunzători și să se descurce când zidul după care stă e distrus. <a href="https://crs011.github.io/projects/bettertanks.html">Articol</a> · <a href="https://github.com/cRs011/proiectul-Unity-2D">cod</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Răspuns către un agent de codare, direct de pe ceas</h3>
+      <span class="when">Python 3 · daemoni Unix</span>
+    </div>
+    <ul>
+      <li>Telegram ca transport, ales pentru aplicația nativă de watchOS; partea grea a fost comprimarea rezultatului agentului în ceva citibil pe încheietură și o decizie la care se răspunde cu un cuvânt. Criptarea între cele trei capete nu e făcută încă, iar articolul spune asta. <a href="https://crs011.github.io/projects/agent-bridge.html">Articol</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Site de portofoliu</h3>
+      <span class="when">HTML · CSS · Python</span>
+    </div>
+    <ul>
+      <li>Scris de mână, fără framework. Proiectele se randează dintr-o singură sursă JSON, printr-un script de build care refuză publicarea când o pagină sau un fișier media pe care îl revendică nu există pe disc. <a href="https://crs011.github.io">crs011.github.io</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="band">
+<section>
+  <h2>Competențe</h2>
+  <dl class="grid">
+    <dt>Limbaje</dt>
+    <dd>Python · C# (.NET) · JavaScript, HTML, CSS · Bash / Zsh · SQL · C / C++</dd>
+    <dt>Sisteme</dt>
+    <dd>Daemoni Unix și <code>launchd</code> · file locking POSIX · Git: ramuri, pull request-uri, review · API-uri REST și OAuth · Docker · Jira</dd>
+    <dt>Unelte</dt>
+    <dd>Unity 2D · Playwright / Chrome DevTools Protocol · API-uri Google Cloud · SQLite · Obsidian · agenți de codare AI</dd>
+    <dt>Limbi</dt>
+    <dd>română (nativă) · engleză (nivel profesional, B2–C1)</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Educație</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Licență, Automatică și Informatică Aplicată (AIA)</h3>
+      <span class="when">2023 – 2027</span>
+    </div>
+    <p class="org">Facultatea de Hidroinginerie și Managementul Resurselor de Apă, Universitatea Tehnică de Construcții București (UTCB)</p>
+    <ul>
+      <li>Teoria sistemelor, ecuații diferențiale, analiza semnalelor, instrumentație, automatizări industriale, inginerie software. An terminal.</li>
+      <li>Cursuri scurte, 2024: Neuroscience &amp; AI (Universitatea Catolică din Valencia) · Film Literacy (Universitatea din Zadar).</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+
+
+</body>
+</html>

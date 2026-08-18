@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cristian Lăcătuș — CV</title>
+<link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+<header class="head">
+  <div>
+    <h1>Cristian Lăcătuș</h1>
+    <p class="role">Software &amp; automation engineer</p>
+    <p class="contact">
+      Bucharest, Romania<span class="sep">·</span><a href="mailto:lacatuscristian8@gmail.com">lacatuscristian8@gmail.com</a><span class="sep">·</span>+40 739 645 462<br>
+      <a href="https://crs011.github.io">crs011.github.io</a><span class="sep">·</span><a href="https://github.com/cRs011">github.com/cRs011</a><span class="sep">·</span><a href="https://www.linkedin.com/in/cristi-lacatus-823696294/">linkedin.com/in/cristi-lacatus</a>
+    </p>
+  </div>
+  <figure class="portrait"><img src="portrait.jpg" alt="Cristian Lăcătuș" width="654" height="818"></figure>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p class="summary">
+    Final-year Automation &amp; Applied Informatics student, software engineer intern at DeviDevs
+    since July 2026. Most of what I build has no interface: Python jobs that run on a schedule, hold a
+    file lock, retry a slow API and recover without a human. I like the front-end half too, so I am
+    after a junior full-stack role.
+  </p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Software Engineer Intern — Automation &amp; Integrations</h3>
+      <span class="when">Jul 2026 – present</span>
+    </div>
+    <p class="org">DeviDevs Technologies · Bucharest (hybrid)</p>
+    <ul>
+      <li><b>Human-in-the-loop agent bridge.</b> A Python daemon that lets me supervise a long coding-agent run from my phone or watch: verbose output summarised into one notification line and a question answerable in a single word, with a FIFO execution queue behind it. In daily use.</li>
+      <li><b>Single-writer concurrency.</b> An interactive session and a headless job write to the same Markdown vault, so writes are serialised with kernel file locks (<code>fcntl.flock</code>) and explicit signal handlers instead of hoping the two never overlap.</li>
+      <li><b>Scheduled automation and integrations.</b> Python ETL over Google Workspace APIs (Drive, Sheets, Gmail) running unattended under macOS <code>launchd</code>, with conditional HTTP caching and SQLite state, plus Playwright controllers driving Chrome over the DevTools Protocol where there is no API.</li>
+      <li><b>Guardrails for AI coding agents.</b> Lifecycle hooks that block an edit made after reading only a fraction of a file, plus a checker that verifies every documented claim against what is actually on disk — currently 537 file references and 29 capabilities, tested by running them.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Academic practice — game systems and enemy AI</h3>
+      <span class="when">May – Jul 2026</span>
+    </div>
+    <p class="org">DeviDevs Technologies / UTCB · team project</p>
+    <ul>
+      <li>Built the enemy AI and cover system for a 2D tank game in Unity and C#, in a team working on a normal branch, pull request and review workflow — roughly 87 hours logged in Jira across 10+ epics. Continued at the company as an intern afterwards.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Operations &amp; customer support</h3>
+      <span class="when">Jun – Oct 2022</span>
+    </div>
+    <p class="org">Tucano Coffee · Bucharest — high-volume order flow, stock reconciliation and direct customer contact.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Selected projects</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>BetterTanks — enemy AI for a 2D tank game</h3>
+      <span class="when">Unity 2D · C#</span>
+    </div>
+    <ul>
+      <li>A five-state machine — patrol, chase, shoot, defensive, flee — where transitions are driven by health thresholds rather than distance alone: below 50% it looks for cover, below 25% it runs.</li>
+      <li>No hand-placed cover markers: for every destructible wall still standing it derives four candidate positions from <code>Collider2D.bounds</code> and scores them, weighting proximity to itself ten times higher than distance from the player. The time went into behaviour, not structure — stopping it oscillating between two hiding spots, and handling the wall being destroyed while it is behind it. <a href="https://crs011.github.io/projects/bettertanks.html">Write-up</a> · <a href="https://github.com/cRs011/proiectul-Unity-2D">code on GitHub</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Answering a coding agent from my watch</h3>
+      <span class="when">Python 3 · Unix daemons</span>
+    </div>
+    <ul>
+      <li>Telegram as transport, chosen for its native watchOS app; the hard part was compressing agent output into something readable on a wrist and a decision answerable in one word. Encryption between the three endpoints is not implemented yet, and the write-up says so. <a href="https://crs011.github.io/projects/agent-bridge.html">Write-up</a></li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>Portfolio site</h3>
+      <span class="when">HTML · CSS · Python</span>
+    </div>
+    <ul>
+      <li>Hand-written, no framework. Projects render from a single JSON source through a build script that refuses to publish when a page or a media file it claims does not exist on disk. <a href="https://crs011.github.io">crs011.github.io</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="band">
+<section>
+  <h2>Skills</h2>
+  <dl class="grid">
+    <dt>Code</dt>
+    <dd>Python · C# (.NET) · JavaScript, HTML, CSS · Bash / Zsh · SQL · C / C++</dd>
+    <dt>Systems</dt>
+    <dd>Unix daemons and <code>launchd</code> · POSIX file locking · Git branching, pull requests, review · REST APIs and OAuth · Docker · Jira</dd>
+    <dt>Tools</dt>
+    <dd>Unity 2D · Playwright / Chrome DevTools Protocol · Google Cloud APIs · SQLite · Obsidian · AI coding agents</dd>
+    <dt>Spoken</dt>
+    <dd>Romanian (native) · English (professional working proficiency, B2–C1)</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Education</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3>BSc, Automation &amp; Applied Informatics (AIA)</h3>
+      <span class="when">2023 – 2027</span>
+    </div>
+    <p class="org">Faculty of Hydrotechnical Engineering and Water Resources Management, Technical University of Civil Engineering of Bucharest (UTCB)</p>
+    <ul>
+      <li>Control systems, differential equations, signal analysis, instrumentation, industrial automation, software engineering. Final year.</li>
+      <li>Short courses, 2024: Neuroscience &amp; AI (Catholic University of Valencia) · Film Literacy (University of Zadar).</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+
+
+</body>
+</html>
