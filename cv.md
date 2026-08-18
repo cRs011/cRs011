@@ -58,4 +58,4 @@ Final-year Automation & Applied Informatics student, software engineer intern at
 **BSc, Automation & Applied Informatics (AIA)** — Faculty of Hydrotechnical Engineering and Water Resources Management, Technical University of Civil Engineering of Bucharest (UTCB), 2023 – 2027 (final year).
 
 - Control systems, differential equations, signal analysis, instrumentation, industrial automation, software engineering.
-- Short courses, 2024: Neuroscience & AI (Catholic University of Valencia) · Film Literacy (University of Zadar).
+- EU-CONEXUS micro-credentials, 2024: Neuroscience & AI (Catholic University of Valencia) · Film Literacy (University of Zadar). UTCB is a member of the EU-CONEXUS alliance.
