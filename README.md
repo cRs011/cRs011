@@ -1,7 +1,7 @@
 ### Cristian Lăcătuș
 
 Software & automation engineer intern at [DeviDevs Technologies](https://devidevs.com), Bucharest.
-Final year of Automation & Applied Informatics (AIA) at the Faculty of Hydrotechnical Engineering and Water Resources Management, Technical University of Civil Engineering of Bucharest (UTCB) — the faculty name is misleading, the programme is control systems and software.
+Final year of Automation & Applied Informatics (AIA) at the Faculty of Hydrotechnical Engineering and Water Resources Management, Technical University of Civil Engineering of Bucharest (UTCB) .
 
 ### What I work on
 
